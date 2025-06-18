@@ -1,3 +1,5 @@
+package main.java;
+
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -55,7 +57,7 @@ public class Day1 {
   public static void main(String[] args) {
     Day1 day1 = new Day1();
     try {
-      List<String> list = Files.readAllLines(Paths.get("resources/day-1.txt"));
+      List<String> list = Files.readAllLines(Paths.get("src/main/resources/day-1.txt"));
       System.out.println("part 1: " + day1.part1(list));
       System.out.println("part 2: " + day1.part2(list));
     } catch (IOException e) {

@@ -1,9 +1,12 @@
+package test.java;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import main.java.Day1;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -14,7 +17,7 @@ class Day1Test {
   @BeforeEach
   void setUp() {
     try {
-      list = Files.readAllLines(Paths.get("resources/day-1-test.txt"));
+      list = Files.readAllLines(Paths.get("src/test/resources/day-1-test.txt"));
     } catch (Exception e) {
       e.printStackTrace(System.out);
     }
